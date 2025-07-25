@@ -1,0 +1,116 @@
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 10px #0ff;
+}
+header .logo {
+  font-size: 1.8rem;
+  color: #0ff;
+}
+nav a {
+  color: #ccc;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #0ff;
+  transition: 0.3s ease;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url('https://images.unsplash.com/photo-1611605698335-8038e66b6c0c') center/cover no-repeat;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.product {
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0ff;
+}
+.product h3 {
+  margin: 0.8rem 0 0.3rem;
+  color: #0ff;
+}
+.product p {
+  margin: 0.2rem 0 0.6rem;
+  color: #ccc;
+}
+.product button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.product button:hover {
+  background: #00cccc;
+}
+.trust-badges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background: #000;
+  color: #0ff;
+  font-size: 0.9rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #111;
+}
+footer .socials a {
+  margin: 0 10px;
+  color: #0ff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+footer p {
+  margin-top: 0.5rem;
+  color: #999;
+}
